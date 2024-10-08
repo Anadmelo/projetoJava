@@ -3,9 +3,10 @@ function carregar() {
     var img = document.createElement('img')
     img.setAttribute('id', 'foto')
     var data = new Date()
-    var hora = 20
-    //var hora = data.getHours()
+    //var hora = 20
+    var hora = data.getHours()
     msg.innerHTML = 'Agora são '+ hora + ' horas.'
+    res.appendChild(img)
     if (hora >= 0 && hora < 12){
             //bom dia
         img.setAttribute('src', 'manha.jpg')
